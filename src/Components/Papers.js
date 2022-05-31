@@ -120,9 +120,9 @@ function Papers() {
               value={collect}
               autoWidth
               onChange={handleChange}
-            >{collection.map(collection => {
+            >{collection !== [] ? collection.map(collection => {
               return <MenuItem key={collection.id} value={collection.id}>{collection.title}</MenuItem>
-            })}
+            }): null}
             </Select>
           </FormControl>
         </Box>
