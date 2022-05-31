@@ -107,11 +107,11 @@ function GridItem(props) {
                         }}> Photo by <a
                             href={`${props.link}/?utm_source=the_album&utm_medium=referral`}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className='link'>{props.username}</a> on
                             <a href='https://unsplash.com/es/?utm_source=the_album&utm_medium=referral'
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className='link'> Unplash </a></Typography>
                     </Box>
                 </Modal>

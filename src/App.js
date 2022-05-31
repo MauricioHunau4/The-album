@@ -4,7 +4,6 @@ import Title from "./Components/Title";
 import Papers from "./Components/Papers"
 import Box from '@mui/material/Box';
 
-
 function App() {
   return (
     <Box sx={{
@@ -12,7 +11,6 @@ function App() {
       width: "100%"
     }}>
         <Title />
-        
         <Papers />
     </Box>
   );
