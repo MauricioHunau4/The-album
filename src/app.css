@@ -5,6 +5,10 @@
     font-family: 'Roboto';
 }
 
+body{
+    background-color: hsla(15,15%,75%,1);
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -13,29 +17,6 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-}
-
-.animation-infinite {
-    animation-duration: 50s !important;
-    animation-timing-function: linear;
-    animation-delay: none;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-    animation-name: scroll-grid;
-}
-
-@keyframes scroll-grid {
-    0% {
-        -webkit-transform: translate3d(-1700px, 0, 0);
-        transform: translate3d(-1700px, 0, 0);
-    }
-
-    100% {
-        -webkit-transform: translate3d(1700px, 0, 0);
-        transform: translate3d(1700px, 0, 0);
-    }
 }
 
 .css-ieud83-MuiGrid-root>.MuiGrid-item {
@@ -50,12 +31,6 @@ img {
 
 *:focus-visible {
     outline: none;
-}
-
-.photo {
-    object-fit: contain;
-    height: 500px;
-    width: 700px;
 }
 
 .link:hover {
@@ -75,17 +50,6 @@ img {
     animation: fade-bottom 1s ease-in;
 }
 
-.active.fade-left {
-    animation: fade-left 1s ease-in;
-}
-
-.active.fade-right {
-    animation: fade-right 1s ease-in;
-}
-
-.active.fade-down {
-    animation: fade-down 1s ease-in;
-}
 
 @keyframes fade-bottom {
     0% {
@@ -99,38 +63,10 @@ img {
     }
 }
 
-@keyframes fade-left {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+@media screen and (max-width: 992px) {
+    .box-information-camera{
+      top: 25%
     }
-}
-
-@keyframes fade-right {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-down {
-    0% {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+  }
+  
