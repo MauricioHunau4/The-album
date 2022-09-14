@@ -37,6 +37,10 @@ img {
     color: rgb(145, 145, 145);
 }
 
+.photo{
+    object-fit: contain;
+}
+
 .reveal {
     position: relative;
     opacity: 0;

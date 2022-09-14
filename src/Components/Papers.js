@@ -18,7 +18,9 @@ function Papers() {
   const fetchingTheFirst28Photos = async () => {
     await fetch(`https://api.unsplash.com/photos/?per_page=28&client_id=${process.env.REACT_APP_USER_KEY}`)
       .then(res => res.json())
-      .then(data => setItem(data));
+      .then(data => {setItem(data)
+      console.log(data)});
+
   };
 
   const refreshPhotoWhenButtonClicked = async () => {
